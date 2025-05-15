@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* General Reset */
+
+/* Style sheeet for the most of the webpage */
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+  color: azure;
+  
+}
+body{
+  background-image: url("https://th.bing.com/th/id/R.aeadb1c1dca8946c9dbb92cd99e63b8e?rik=7FhwdiGXOT3iSQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fc%2fb%2fc%2f967736-d-gray-man-wallpaper-2560x1600-for-android-50.jpg&ehk=1ibhIBZiKl4xRX%2bWeyjQD%2fEOu9RJI4Wmq0xlp%2bKtyvc%3d&risl=&pid=ImgRaw&r=0");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 10%;
+
+}
+
+
+.header{
+  display: flex;
+  justify-content: center;
+  
+}
+.header img {
+  width: 70%;
+  opacity: 0.85;
+}
+
+/* This is the CSS that makes the layout of 3 boxes for some reason you cannot go above 30% or it drops the 3rd box down. */
+.column {
+  width: 30%;
+  float: left;
+  padding: 10px;
+}
+
+.column img {
+  float: left;
+ height: 350px;
+}
+img{
+  float:center;
+width: 100%;
+  padding-right: 10px;
+object-fit: contain;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.navbar{
+  margin-top: 50px;
+  font-family: naruto;
+  font-size: 2em;
+  text-shadow: 3px 3px 10px rgb(33, 2, 54);
+  list-style-type: none;
+  
+}
+
+.navbar a{
+  color: rgb(22, 0, 164);
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style-type: none;
+
+}
+.navbar li {
+  display: inline;
+  list-style-type: none;
+}
+
+ .p1 {
+  background-color: rgb(83, 0, 83);
+  padding: 1em;
+  border-radius: 2em;
+}
+
+.p2 {
+  background-color: rgb(22, 0, 164);
+  border-radius: 2em;
+  padding: 1em;
+}
+.p3 {
+  background-color: rgb(33, 1, 61);
+  color: rgb(255, 255, 255);
+  border-radius: 2em;
+  padding: 1em;
+}
+.p1,.p2,.p3 {
+  min-height: 350px;
+
+}
+
+
+/* Style the footer */
+.footer {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background-color: transparent;
+}
+
+
+.footer p {
+ 
+  text-shadow: 3px 3px 3px rgb(39, 39, 39);
+  font-size: 1.5em;
+
+}
+/*this is for the read more button on the about page */
+button{
+  background-color: rgb(83, 0, 83);
+  color:white;
+  border-radius: .25em;
+  padding-top: 2px;
+  border: 0%;
+  margin: 0%;
+  font-size:smaller;
+}
+/* This button is for the policy at the footer*/
+.button{
+  background-color: white;
+  color:black;
+  border-radius: .25em;
+  padding-top: 2px;
+  border: 0%;
+  margin: 0%;
+  font-size: larger;
+}
+#more {
+  display: none;
+}
+/* This CSS uses the font that was downloaded in the webpage */
+@font-face {
+  font-family: naruto;
+  src: url(fonts/naruto.ttf);
+}
+h1 {
+  font-family: naruto;
+  font-size: 100px;
+  padding-left: 20%;
+  text-shadow: 3px 3px 3px black;
+  color: rgb(25, 83, 160);
+
+}
+/* Responsive layout when the screen gets smaller it changes*/
+@media (max-width: 900px) {
+  .column {
+    width: 100%;
+    font-size: .95em;
+  }
+.column img {
+  height: 300px;
+  
+}
+}
+
+
+
+
+
